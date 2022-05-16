@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+<div align="center">
+  <h1> 
+    <img alt="fableverse logo" src="https://user-images.githubusercontent.com/34040658/166625392-dcec9672-fd76-4914-a991-715c58cdd3c5.png" width="100px"/><br/>
+    UI Template
+  </h1>
+  <h4> A template for React based Websites. </h4>
+  
+  <a href="https://github.com/Fableverse/ui-template/releases"
+    ><img
+      src="https://img.shields.io/github/workflow/status/fableverse/ui-template/Run Jest?color=white&label=build&style=flat-square"
+      alt="GitHub Latest Version"
+  /></a>
+  <a href="https://github.com/Fableverse/ui-template/releases"
+    ><img
+      src="https://img.shields.io/github/v/tag/fableverse/ui-template?color=white&label=version&style=flat-square"
+      alt="GitHub Latest Version"
+  /></a>
+  <a href=""
+    ><img
+      src="https://img.shields.io/github/commit-activity/w/fableverse/ui-template?color=white&label=commit activity&style=flat-square"
+      alt="GitHub Latest Version"
+  /></a>
+  <br />
+  <a href="https://discord.gg/5a9bSRyYyF"
+    ><img
+      src="https://img.shields.io/discord/966144993163091988?label=discord&color=blue&style=flat-square"
+      alt="Chat on Discord"
+  /></a>
+  <a href="https://twitter.com/Fableverse"
+    ><img
+      src="https://img.shields.io/badge/twitter-@fableverse-1DA1F3?color=blue&style=flat-square"
+      alt="Follow @Fableverse on Twitter"
+  /></a>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📖 Table of Contents
+- [Features](#-features)
+- [Packages](#-packages)
+- [Quick Setup Guide](#-quick-setup-guide)
+- [Projects using this Template](#-projects-using-this-template)
+- [Reporting a Bug or Issue](#-reporting-a-bug-or-issue)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-## Available Scripts
+## 💡 Features
+Reason for this project/template
+- A cool feature
 
-In the project directory, you can run:
+### What is Blank and why use it?
+TBD
 
-### `npm start`
+## 📦 Packages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Package         | Description                           | Links          |
+| --------------- | ------------------------------------- | -------------- |
+| A package       | A description                         | [Website](), [Docs]() |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Quick Setup Guide
+### Prerequisites
+- [Git](https://gitforwindows.org/), for cloning and interacting from GitHub
 
-### `npm test`
+### Setup
+Clone the project from Github, locally using 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/Fableverse/api-template.git
+```
 
-### `npm run build`
+Run NPM install from your terminal
+```
+npm i
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you are planning to use mongodb, you will need to create a `.env` file at the root of the codebase, with the following:
+```env
+# Set to production when deploying to production
+NODE_ENV=development
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Node.js server configuration
+PORT=8000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# MongoDB configuration
+MONGO_CONNECTION_STRING=mongodb://localhost:27017/testing
+```
+The mongodb connection will have to be changed depending on where you have it hosted, let it be locally or in the cloud. Right now, this is pointed to a local mongo database.
 
-### `npm run eject`
+To run the project, run:
+```
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run the jest tests in the project, run:
+```
+npm test
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📞 Reporting a Bug or Issue
+Create a new [Issue](https://github.com/Fableverse/base-template/issues) directly in this repository utilizing the "Bug Report" template.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+For issues related to security or vulnerabilities, please do not create an issue. Instead, reach out to security@fableverse.com with all the details around reproducing it, screenshots, and any other useful information. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🤝 Contributing
+Please reference the [Code of Conduct](https://github.com/Fableverse/base-template/blob/main/CODE_OF_CONDUCT.md) for this repository.
 
-## Learn More
+When you are looking to contribute new code, you will want to create a fork for the changes, and than create a pull request into the original repository. More information on that process can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📝 License
+Copyright © 2022 Fableverse
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [GPL](https://github.com/Fableverse/base-template/blob/main/LICENSE) licensed.
